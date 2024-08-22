@@ -37,25 +37,25 @@ Cela générera un fichier output.json contenant les données des médicaments s
 
 ## Scripts
 ### conversion.py
-Ce script lit le fichier texte d'origine et le réécrit en UTF-8. Il utilise latin-1 comme encodage de lecture, car il est couramment utilisé pour les textes en français.
-Usage :
-Lit : CIS_bdpm.txt
-Écrit : CIS_bdpm_utf8.txt
+- Ce script lit le fichier texte d'origine et le réécrit en UTF-8. Il utilise latin-1 comme encodage de lecture, car il est couramment utilisé pour les textes en français.
+- Usage :
+- Lit : CIS_bdpm.txt
+- Écrit : CIS_bdpm_utf8.txt
 
 ### main.py
-Ce script lit le fichier texte UTF-8 converti, extrait les données des médicaments, et les sauvegarde dans un fichier JSON structuré.
-Usage :
-Lit : CIS_bdpm_utf8.txt
-Écrit : output.json
-Exemple de Données
-Les lignes de données dans CIS_bdpm.txt ont le format suivant :
+- Ce script lit le fichier texte UTF-8 converti, extrait les données des médicaments, et les sauvegarde dans un fichier JSON structuré.
+- Usage :
+- Lit : CIS_bdpm_utf8.txt
+- Écrit : output.json
+- Exemple de Données
+- Les lignes de données dans CIS_bdpm.txt ont le format suivant :
 
 ```bash
 CodeCIS  DénominationDuMédicament  FormePharmaceutique  VoiesDAdministration  StatutAMM  TypeDeProcédureAMM  ÉtatDeCommercialisation  DateD’AMM  StatutBdm  NuméroDeLAutorisationEuropéenne  Titulaire(s)  SurveillanceRenforcée
 ```
 Le fichier output.json aura le format suivant :
 
-json```
+```json
 [
     {
         "Code CIS": "66864885",
